@@ -3,6 +3,9 @@
     padding: 0;
     margin: 0;
 }
+
+/* Début du header*/
+
 header{
     position: sticky;
     top: 0;
@@ -21,6 +24,9 @@ header{
     margin-right: 10px;
     cursor: pointer;
 }
+
+    /* Début Barre de recherche*/
+
 .div-search{
     width: 30%;
     height: 100%;
@@ -40,6 +46,11 @@ header{
 .loupe{
     display: none;
 }
+
+    /* Fin Barre de recherche*/
+
+    /* Début Icones */
+
 .partie_droite{
     display: flex;
     justify-content: flex-end;
@@ -65,14 +76,24 @@ header{
 .acc{
     height: 24px;
 }
+
+    /* Fin Icones*/
+
+/* Fin du header*/
+
+/* Début du main*/
+
 main{
     padding: 0 32px;
 }
+
+    /* Début Partie "Explore Nearby" du main*/
+
 #nearby{
     padding-top: 24px;
 }
-h1{
-    font-size: 40px;
+#nearby h1{
+    font-size: 39px;
     font-weight: 600;
     padding-bottom: 30px;
 }
@@ -110,6 +131,10 @@ h2, .gray{
 .gray{
     color: rgba(128, 128, 128, 0.813);
 }
+
+    /* Fin Partie "Explore Nearby" du main*/
+
+/* Fin du main*/
 
 @media screen and (min-width: 640px) {
     #section-flex{
