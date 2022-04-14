@@ -115,7 +115,7 @@ header{
 /* Début du main*/
 
 main{
-    padding: 0 32px;
+    padding: 0 38px;
 }
 
     /* Début Partie "Explore Nearby" du main*/
@@ -174,18 +174,17 @@ h2, .gray{
     /* Début Partie "Live Anywhere" du main*/
 .main3{
     overflow-x: scroll;
+    width: 100%;
 }
 ::-webkit-scrollbar{
     display: none;
 }
 .main3_flex{
     display: flex ;
-    width: 400%;
-    padding: 10px;
-    padding-left: 10px;
+    width: 1350px;
+    padding: 10px 0;
 }
 .liveBox{
-    width: 380px;
     margin-left: 12px;
 }
 .liveBox:hover{
@@ -193,7 +192,8 @@ h2, .gray{
     transition: 0.3s ease;
 }
 .liveBox img{
-    width: 100%;
+    width: 320px;
+    height: 320px;
     border-radius: 15px;
 }
 .liveBox h2{
@@ -203,7 +203,7 @@ h2, .gray{
     /* Fin Partie "Live Anywhere" du main*/
 
     #parent2{
-        width: 80%;
+        width:100%;
         height: 55vh;
         display: flex;
         justify-content: center;
@@ -211,7 +211,7 @@ h2, .gray{
         background-image: url("../img/image1.webp");
         background-size: cover;
         background-position: center;
-        margin-left: 10%;
+        margin-top: 10%;
         border-radius: 1rem;
         padding-left: 10%;
         padding-bottom: 25%;
@@ -255,7 +255,7 @@ h2, .gray{
 footer {
     margin-top: 55px;
     background-color: rgb(243 244 246);
-    padding-top: 12%;
+    padding-top: 5%;
 }
 
 .about {
@@ -272,6 +272,7 @@ footer {
 }
 .about2 p{
     margin-top: 10px;
+    color: gray;
 }
 .about2 {
     width: 50%;
@@ -287,9 +288,9 @@ footer {
 
 /* Fin du footer*/
 @media screen  and (min-width: 530px) {
-    #parent {
-height: 40vh;
-    }
+        #parent {
+    height: 40vh;
+        }
 }
 
 
@@ -299,12 +300,6 @@ height: 40vh;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-    }
-    .main3_flex{
-        display: flex ;
-        width: 200%;
-        padding: 10px;
-        padding-left: 10px;
     }
 }
 
@@ -353,13 +348,16 @@ height: 40vh;
     .about2 {
         width: 25%;
         font-size: 17px;
-        padding-bottom: 20%;
+        padding-bottom: 5%;
+    }
+    .about2 p{
+        margin-top: 20px;
     }
 }
 
 @media screen  and (min-width: 875px) {
     #parent {
-height: 70vh;
+        height: 70vh;
     }
 }
 
@@ -375,10 +373,7 @@ height: 70vh;
 }
 @media screen and (min-width: 1280px) {
     main{
-        padding: 0 15%;
-    }
-    #section-flex{
-        height: 22vh;
+        padding: 0 20%;
     }
     .cityBox{
         width: 23%;
