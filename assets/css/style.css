@@ -102,12 +102,18 @@ main{
     align-items: center;
     margin: 20px 8px 8px;
 }
+.cityBox h2{
+    font-weight: 300;
+    padding-bottom: 5px;
+}
+/* On ajoute une couleur de fond et une efet de grossissement au survol de la souris */
 .cityBox:hover{
     background-color: rgba(211, 211, 211, 0.298);
     border-radius: 10px;
     transform: scale(1.05);
     transition: .2s ease-out;
 }
+/* Cette fois on ajoute une couleur de fond au click de la souris */
 .cityBox:active{
     background-color: lightskyblue;
 }
@@ -132,8 +138,36 @@ h2, .gray{
     color: rgba(128, 128, 128, 0.813);
 }
 
-    /* Fin Partie "Explore Nearby" du main*/
+/* Fin Partie "Explore Nearby" du main*/
 
+.main3{
+    overflow-x: scroll;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+.main3_flex{
+    display: flex ;
+    width: 110%;
+    padding: 10px;
+    padding-left: 10px;
+}
+.liveBox{
+    width: 380px;
+    margin-left: 12px;
+}
+.liveBox:hover{
+    transform: scale(1.05);
+    transition: 0.3s ease;
+}
+.liveBox img{
+    width: 100%;
+    border-radius: 15px;
+}
+.liveBox h2{
+    padding-top: 10px ;
+    font-size: 24px;
+}
 /* Fin du main*/
 
 @media screen and (min-width: 640px) {
@@ -144,6 +178,11 @@ h2, .gray{
         flex-wrap: wrap;
     }
 }
+
+
+
+
+
 
 @media screen and (min-width: 768px) {
     .div-search{
